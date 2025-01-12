@@ -117,7 +117,7 @@
 
             <?php 
             $sql2 = "SELECT * FROM gallery";
-            $hasil2 = $conn->query($sql1); 
+            $hasil2 = $conn->query($sql2); 
             $total_records = $hasil2->num_rows;
             ?>
             <p>Total Gambar : <?php echo $total_records; ?></p>
