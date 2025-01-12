@@ -91,6 +91,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
+                <a class="nav-link text-light fs-6" href="login.php">Login</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link text-light fs-6" href="index.php">Home</a>
               </li>
               <li class="nav-item">
@@ -100,7 +103,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a class="nav-link text-light fs-6 m-0 ms-lg-3" href="index.php#galeri">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fs-6" href="login.php">Login</a>
+                <a class="nav-link text-light fs-6 m-0 ms-lg-3" href="index.php#schedule">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-6 m-0 ms-lg-3" href="index.php#profile">Profile</a>
               </li>
           </div>
         </div>
@@ -115,6 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <img src="gambar/ykmr4.jpg" alt="ykmrh" class="img-circle" width="200">
             <br>
             <br>
+            
             <!-- <?php
             $username = "laulua";
             $password = "liuliu";

@@ -20,8 +20,6 @@
                     $sql = "SELECT * FROM article ORDER BY tanggal DESC LIMIT $limit_start, $limit";
                     $hasil = $conn->query($sql);
 
-                    $sql = "SELECT * FROM article ORDER BY tanggal DESC";
-                    $hasil = $conn->query($sql);
 
                     $no = 1;
                     while ($row = $hasil->fetch_assoc()) {
@@ -76,9 +74,9 @@
                                                         <label for="formGroupExampleInput3" class="form-label">Gambar Lama</label>
                                                         <?php
                                                         if ($row["gambar"] != '') {
-                                                            if (file_exists('img/' . $row["gambar"] . '')) {
+                                                            if (file_exists('gambar/' . $row["gambar"] . '')) {
                                                         ?>
-                                                                <br><img src="img/<?= $row["gambar"] ?>" width="100">
+                                                                <br><img src="gambar/<?= $row["gambar"] ?>" width="100">
                                                         <?php
                                                             }
                                                         }
